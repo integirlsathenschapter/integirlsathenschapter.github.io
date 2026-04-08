@@ -1,0 +1,161 @@
+/* Part of the following is from the about section (global css):*/
+:root {
+    --primary-color: #5e4d9e;
+    --dark-color: #2c1b2d;
+    --light-color: #C69AA4;
+    --notsolight-color: #B58A94;
+    --white-color: #ffffff;
+    --header-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+/* body styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--white-color);
+    margin: 0;
+    color: var(--dark-color);
+    line-height: 1.6;
+    overscroll-behavior: none;
+}
+
+.main-body {
+    padding-top: 9vh;
+}
+
+/* heading styles */
+h1, h2, h3, h4 {
+    font-family: var(--header-font);
+    font-weight: 700;
+    margin: 10px 0 0 0; /* maybe this could be changed elsewhere? */
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2, h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+p{
+    font-size: 1rem;
+}
+
+/*homepage css:*/
+.hero {
+    background-image: url('https://img.freepik.com/free-vector/sunset-city-background_1092-42.jpg'); /* replace with your chapter's background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* allows the background image to stay fixed while scrolling */
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+}
+
+.mission{
+    background-color: var(--light-color);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.faq{
+    background-color: var(--notsolight-color);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.long-announcement {
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+/* animating fade-in title */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header styles */
+.top-bar {
+    position: fixed;
+    width: 96%;
+    z-index: 9999;
+    height: 80px;
+    background: #b5d0ff;
+    font-size: 23px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+/* Logo styling for circular appearance */
+.header-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+    background: #091a5c;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer a {
+    color: #FF5722;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    color: #E91E63;
+}
